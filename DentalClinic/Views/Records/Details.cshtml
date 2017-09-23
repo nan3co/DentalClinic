@@ -1,0 +1,65 @@
+﻿@model DentalClinic.Models.PatientRecord
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Thông tin hồ sơ điều trị:</h2>
+<hr />
+<div>    
+    <dl class="dl-horizontal">        
+        <dt>
+            @Html.DisplayNameFor(model => model.Profile)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Profile.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalCost)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TotalCost)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TreatmentDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TreatmentDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedOn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreatedOn)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedOn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedOn)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Doctor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Doctor.Name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Details" asp-controller="Profiles" asp-route-id="@Model.PatientProfileId">Back to List</a>
+</div>
+<div>
+    <div style="text-align:right">
+        <a asp-action="Create" asp-controller="Treatments" asp-route-recordid="@Model.Id">Thêm lượt</a>
+    </div>
+    @Html.Partial("~/Views/Treatments/_TreatmentsList.cshtml", Model.Treatments)
+</div>
+
+

@@ -10,6 +10,7 @@ using DentalClinic.Models;
 using DentalClinic.Data;
 using Microsoft.EntityFrameworkCore;
 using DentalClinic.Controllers;
+using System.Globalization;
 
 namespace DentalClinic
 {
@@ -39,7 +40,7 @@ namespace DentalClinic
             );
 
             services.AddTransient(typeof(ProfilesService));
-            services.AddTransient(typeof(PatientProfileController));
+            services.AddTransient(typeof(ProfilesController));
             //services.Add(new ServiceDescriptor(typeof(DentalClinicContext), new DentalClinicContext(Configuration.GetConnectionString("DentalClinicConnection"))));
         }
 
@@ -64,6 +65,13 @@ namespace DentalClinic
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            var cultureInfo = new CultureInfo("vi-VN");
+            cultureInfo.NumberFormat.CurrencySymbol = "đ";
+            cultureInfo.NumberFormat.CurrencyDecimalDigits = 0;
+            cultureInfo.NumberFormat.CurrencyGroupSeparator = ",";
+
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
         }
     }
 }

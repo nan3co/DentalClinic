@@ -5,11 +5,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>GetDetail</h2>
-
+<h2>Thông tin & hồ sơ:</h2>
+<div style="text-align:right">
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
 <div>
-    <h4>PatientProfile</h4>
-    <hr />
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.Name)
@@ -18,16 +19,10 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.NameEn)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.NameEn)
-        </dd>
-        <dt>
             @Html.DisplayNameFor(model => model.Gender)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.Gender)
+            @Html.DisplayFor(model => model.Gender.Name)
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Phone)
@@ -48,6 +43,12 @@
             @Html.DisplayFor(model => model.Email)
         </dd>
         <dt>
+            @Html.DisplayNameFor(model => model.TreatmentDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TreatmentDate)
+        </dd>
+        <dt>
             @Html.DisplayNameFor(model => model.CreatedOn)
         </dt>
         <dd>
@@ -61,7 +62,10 @@
         </dd>
     </dl>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+
+
+<div style="text-align:right">
+    <a asp-action="Create" asp-controller="Records" asp-route-profileid="@Model.Id">Tạo hồ sơ điều trị</a>
 </div>
+
+@Html.Partial("~/Views/Records/_RecordList.cshtml", Model.Records)

@@ -1,0 +1,48 @@
+﻿@model DentalClinic.Models.Treatment
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Bổ sung điều trị</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Record.Profile" class="control-label"></label>:
+                @Html.DisplayFor(m => m.Record.Profile.Name)
+            </div>
+            <div class="form-group">
+                <label asp-for="Record" class="control-label"></label>:
+                @Html.HiddenFor(m => m.PatientRecordId)
+                @Html.DisplayFor(m => m.PatientRecordId) - @Html.DisplayFor(m => m.Record.Description)
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoctorId" class="control-label"></label>
+                <select asp-for="DoctorId" class="form-control" asp-items="ViewBag.DoctorId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaidAmount" class="control-label"></label>
+                <input asp-for="PaidAmount" class="form-control" />
+                <span asp-validation-for="PaidAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TreatmentDate" class="control-label"></label>
+                <input asp-for="TreatmentDate" class="form-control" />
+                <span asp-validation-for="TreatmentDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Details" asp-controller="records" asp-route-id="@Model.PatientRecordId">Back to List</a>
+</div>

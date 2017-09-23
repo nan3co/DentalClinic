@@ -12,7 +12,7 @@ namespace DentalClinic.Controllers
     {
         public IActionResult Index()
         {
-            return RedirectToAction("Index", "PatientProfile");
+            return RedirectToAction("Index", "Profiles");
         }
 
         public IActionResult About()
