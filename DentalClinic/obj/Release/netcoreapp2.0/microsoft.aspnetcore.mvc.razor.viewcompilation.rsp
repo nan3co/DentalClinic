@@ -1,0 +1,17 @@
+D:\Projects\e-clinic\NetCore\DentalClinic\DentalClinic
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=DentalClinic
+--content-root=D:\Projects\e-clinic\NetCore\DentalClinic\DentalClinic
+--file=D:\Projects\e-clinic\NetCore\DentalClinic\DentalClinic\Views\HelloWorld\Index.cshtml
+--file=D:\Projects\e-clinic\NetCore\DentalClinic\DentalClinic\Views\Home\About.cshtml
+--file=D:\Projects\e-clinic\NetCore\DentalClinic\DentalClinic\Views\Home\Contact.cshtml
+--file=D:\Projects\e-clinic\NetCore\DentalClinic\DentalClinic\Views\Home\Index.cshtml
+--file=D:\Projects\e-clinic\NetCore\DentalClinic\DentalClinic\Views\PatientProfile\Create.cshtml
+--file=D:\Projects\e-clinic\NetCore\DentalClinic\DentalClinic\Views\PatientProfile\Details.cshtml
+--file=D:\Projects\e-clinic\NetCore\DentalClinic\DentalClinic\Views\PatientProfile\Edit.cshtml
+--file=D:\Projects\e-clinic\NetCore\DentalClinic\DentalClinic\Views\PatientProfile\Index.cshtml
+--file=D:\Projects\e-clinic\NetCore\DentalClinic\DentalClinic\Views\Shared\Error.cshtml
+--file=D:\Projects\e-clinic\NetCore\DentalClinic\DentalClinic\Views\Shared\_Layout.cshtml
+--file=D:\Projects\e-clinic\NetCore\DentalClinic\DentalClinic\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=D:\Projects\e-clinic\NetCore\DentalClinic\DentalClinic\Views\_ViewImports.cshtml
+--file=D:\Projects\e-clinic\NetCore\DentalClinic\DentalClinic\Views\_ViewStart.cshtml
