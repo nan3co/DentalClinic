@@ -73,7 +73,7 @@ namespace DentalClinic.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Name", "GenderId", "Phone", "Address", "Email", "TreatmentDate")] PatientProfile model)
+        public async Task<IActionResult> Create([Bind("Name", "GenderId", "Phone", "Address", "Email", "TreatmentDate", "BirthDay")] PatientProfile model)
         {
             if (ModelState.IsValid)
             {
@@ -141,13 +141,13 @@ namespace DentalClinic.Controllers
             if (await TryUpdateModelAsync<PatientProfile>(
                 profileToUpdate,
                 "",
-                s => s.Name, s => s.Gender, s => s.Address, s => s.Phone, s => s.Email, s => s.TreatmentDate, s => s.UpdatedOn))
+                s => s.Name, s => s.Gender, s => s.Address, s => s.Phone, s => s.Email, s => s.TreatmentDate, s => s.UpdatedOn, s => s.BirthDay))
             {
                 try
                 {
                     profileToUpdate.UpdatedOn = DateTime.Now;
                     await _context.SaveChangesAsync();
-                    return RedirectToAction("Details",new { id = id });
+                    return RedirectToAction("Details", new { id = id });
                 }
                 catch (DbUpdateException /* ex */)
                 {

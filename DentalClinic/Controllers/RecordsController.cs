@@ -43,8 +43,8 @@ namespace DentalClinic.Controllers
 
             var patientRecord = await _context.PatientRecords
                 .Include(p => p.Doctor)
-                .Include(p => p.Treatments)
-                .Include(r=>r.Profile)
+                .Include(r => r.Profile)
+                .Include(p => p.Treatments).ThenInclude(t => t.Doctor)
                 .SingleOrDefaultAsync(m => m.Id == id);
             if (patientRecord == null)
             {

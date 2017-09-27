@@ -23,10 +23,11 @@ namespace DentalClinic.Models
         public string Address { get; set; }
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
+        [DataType(DataType.Date)]
         [Display(Name = "Ngày sinh")]
         public DateTime? BirthDay { get; set; }
 
-        [DataType(DataType.Date)]        
+        [DataType(DataType.DateTime)]        
         [Display(Name = "Ngày điều trị")]
         public DateTime? TreatmentDate { get; set; }
         public ICollection<PatientRecord> Records { get; set; }

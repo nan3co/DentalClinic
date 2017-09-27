@@ -19,7 +19,12 @@ namespace DentalClinic
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
+                .UseKestrel()
+            .UseContentRoot(Directory.GetCurrentDirectory())
+            .UseIISIntegration() // IMPORTANT!!!
+            .UseStartup<Startup>()
+            .Build();
+
+
     }
 }

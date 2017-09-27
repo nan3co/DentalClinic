@@ -26,7 +26,10 @@
             </th>
             <th>
                 <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Họ Tên</a>
-            </th>            
+            </th>
+            <th>
+                Ngày sinh
+            </th>
             <th>
                 Giới tính
             </th>
@@ -55,6 +58,9 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BirthDay)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Gender.Name)

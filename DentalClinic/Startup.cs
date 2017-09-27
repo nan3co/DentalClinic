@@ -31,6 +31,7 @@ namespace DentalClinic
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            //services.AddMvcCore().AddApiExplorer();
             var sqlConnectionString = Configuration.GetConnectionString("DentalClinicConnection");
 
             services.AddDbContext<ClinicContext>(options =>
@@ -50,11 +51,11 @@ namespace DentalClinic
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseBrowserLink();
+                //app.UseBrowserLink();
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                //app.UseExceptionHandler("/Home/Error");
             }
 
             app.UseStaticFiles();
