@@ -19,10 +19,10 @@ namespace DentalClinic
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-        //    var builder = new ConfigurationBuilder()
-        //.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+            //var builder = new ConfigurationBuilder()
+             //   .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
         //.AddJsonFile("config.json", optional: true, reloadOnChange: true);
-        //    Configuration = builder.Build();
+            //Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }

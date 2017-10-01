@@ -13480,33 +13480,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ThienQuang\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/thienquang/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "D:\\Projects\\e-clinic\\NetCore\\DentalClinic\\DentalClinic\\DentalClinic.csproj",
+      "projectUniqueName": "/Users/thienquang/Documents/GitHub/DentalClinic/DentalClinic/DentalClinic.csproj",
       "projectName": "DentalClinic",
-      "projectPath": "D:\\Projects\\e-clinic\\NetCore\\DentalClinic\\DentalClinic\\DentalClinic.csproj",
-      "packagesPath": "C:\\Users\\ThienQuang\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\e-clinic\\NetCore\\DentalClinic\\DentalClinic\\obj\\",
+      "projectPath": "/Users/thienquang/Documents/GitHub/DentalClinic/DentalClinic/DentalClinic.csproj",
+      "packagesPath": "/Users/thienquang/.nuget/packages/",
+      "outputPath": "/Users/thienquang/Documents/GitHub/DentalClinic/DentalClinic/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ThienQuang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/thienquang/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -13523,30 +13518,30 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Pomelo.EntityFrameworkCore.MySql": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
-          "System.Security.Permissions": {
-            "target": "Package",
-            "version": "4.4.0"
-          },
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
           },
+          "Microsoft.AspNetCore.All": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
+          "Pomelo.EntityFrameworkCore.MySql": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
             "version": "4.4.0"
           },
-          "Microsoft.AspNetCore.All": {
+          "System.Security.Permissions": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "4.4.0"
           }
         },
         "imports": [

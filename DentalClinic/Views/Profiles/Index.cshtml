@@ -30,18 +30,18 @@
             <th>
                 Ngày sinh
             </th>
-            <th>
+            <!--<th>
                 Giới tính
-            </th>
+            </th>-->
             <th>
                 Phone
             </th>
             <th>
                 Địa chỉ
             </th>
-            <th>
+            <!--<th>
                 Email
-            </th>
+            </th>-->
             <th>
                 <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Ngày điều trị</a>
             </th>
@@ -62,18 +62,18 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.BirthDay)
                 </td>
-                <td>
+                <!--<td>
                     @Html.DisplayFor(modelItem => item.Gender.Name)
-                </td>
+                </td>-->
                 <td>
                     @Html.DisplayFor(modelItem => item.Phone)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Address)
                 </td>
-                <td>
+                <!--<td>
                     @Html.DisplayFor(modelItem => item.Email)
-                </td>
+                </td>-->
                 <td>
                     @Html.DisplayFor(modelItem => item.TreatmentDate)
                 </td>                

@@ -27,7 +27,7 @@ namespace DentalClinic.Models
         [Display(Name = "Ngày sinh")]
         public DateTime? BirthDay { get; set; }
 
-        [DataType(DataType.DateTime)]        
+        [DataType(DataType.Date)]        
         [Display(Name = "Ngày điều trị")]
         public DateTime? TreatmentDate { get; set; }
         public ICollection<PatientRecord> Records { get; set; }
