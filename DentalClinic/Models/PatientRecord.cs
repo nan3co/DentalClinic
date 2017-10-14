@@ -19,6 +19,8 @@ namespace DentalClinic.Models
         [StringLength(500,MinimumLength = 5)]
         [Required]
         public string Description { get; set; }
+		[DisplayName("Ghi chu1")]		
+		public string Note { get; set; }
         [DisplayName("Chi phí")]
         [DataType(DataType.Currency)]
         public decimal TotalCost { get; set; }
