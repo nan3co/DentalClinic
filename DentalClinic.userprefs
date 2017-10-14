@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{A20CC9AF-1042-4B10-969A-B38D18792BFF}|Default">
   <MonoDevelop.Ide.ItemProperties.DentalClinic PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DentalClinic/Models/PatientProfile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DentalClinic/Views/Profiles/Index.cshtml">
     <Files>
       <File FileName="DentalClinic/Startup.cs" Line="39" Column="40" />
-      <File FileName="DentalClinic/Views/Profiles/Create.cshtml" Line="29" Column="22" />
-      <File FileName="DentalClinic/Views/Profiles/Details.cshtml" Line="32" Column="17" />
-      <File FileName="DentalClinic/Views/Profiles/Edit.cshtml" Line="31" Column="22" />
-      <File FileName="DentalClinic/Views/Profiles/Index.cshtml" Line="67" Column="25" />
-      <File FileName="DentalClinic/Models/PatientProfile.cs" Line="30" Column="42" />
+      <File FileName="DentalClinic/Views/Profiles/Create.cshtml" Line="44" Column="22" />
+      <File FileName="DentalClinic/Views/Profiles/Details.cshtml" Line="50" Column="17" />
+      <File FileName="DentalClinic/Views/Profiles/Edit.cshtml" Line="46" Column="22" />
+      <File FileName="DentalClinic/Views/Profiles/Index.cshtml" Line="44" Column="21" />
+      <File FileName="DentalClinic/Models/PatientProfile.cs" Line="26" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
